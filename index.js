@@ -65,10 +65,9 @@ function promptUser() {
 
 function generator(response) {
   var badge = ['','','',''];
-  var percentage = Math.round(100/response.license.length)
 
   for (let i = 0; i < response.license.length; i++) {
-      badge[i] = `![License](https://img.shields.io/badge/${response.license[i]}-${percentage}%-blue.svg)`
+      badge[i] = `![License](https://img.shields.io/badge/License-${response.license[i]}-blue.svg)`
       if ( response.license[i] === 'GNU') {
         response.license[i] = ` - [GNU](https://choosealicense.com/licenses/gpl-3.0/)`
       } else {
