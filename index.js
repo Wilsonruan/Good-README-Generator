@@ -29,17 +29,6 @@ function promptUser() {
         name: 'usage',
       },
       {
-        type: 'checkbox',
-        message: 'Please select License:',
-        choices: [
-          "MIT",
-          "ISC",
-          "GNU GPLv3",
-          'Apache'
-        ],
-        name: 'license',
-      },
-      {
         type: 'input',
         message: 'Please provide a description of Contributing for project:',
         name: 'contributing',
@@ -48,6 +37,17 @@ function promptUser() {
         type: 'input',
         message: 'Please provide a description of Test:',
         name: 'test',
+      },
+      {
+        type: 'checkbox',
+        message: 'Please select License:',
+        choices: [
+          "MIT",
+          "ISC",
+          "GNU",
+          'Apache'
+        ],
+        name: 'license',
       },
       {
         type: 'input',
@@ -64,7 +64,20 @@ function promptUser() {
 }
 
 function generator(response) {
+  var badge = ['','','',''];
+  var percentage = Math.round(100/response.license.length)
+
+  for (let i = 0; i < response.license.length; i++) {
+      badge[i] = `![License](https://img.shields.io/badge/${response.license[i]}-${percentage}%-blue.svg)`
+      if ( response.license[i] === 'GNU') {
+        response.license[i] = ` - [GNU](https://choosealicense.com/licenses/gpl-3.0/)`
+      } else {
+        response.license[i] = ` - [${response.license[i]}](https://choosealicense.com/licenses/${response.license[i].toLowerCase()}/)`
+      }
+  }
+
   return `
+${badge.join('  ')}
 ## ${response.title}
 
 ## Description:
@@ -87,7 +100,7 @@ function generator(response) {
     ${response.usage}
 
 ## License:
-    ${response.license}
+  ${response.license.join('\n  ')}
 
 ## Contributing:
     ${response.contributing}

@@ -1,8 +1,9 @@
 
-## Wilson Ruan
+![License](https://img.shields.io/badge/MIT-25%-blue.svg)  ![License](https://img.shields.io/badge/ISC-25%-blue.svg)  ![License](https://img.shields.io/badge/GNU-25%-blue.svg)  ![License](https://img.shields.io/badge/Apache-25%-blue.svg)
+## a
 
 ## Description:
-    idk
+    a
 
 ## Table of Contents
 
@@ -15,23 +16,26 @@
 - [Questions](#questions)
 
 ## Installation:
-    idk
+    a
 
 ## Usage:
-    idk
+    a
 
 ## License:
-    MIT,ISC,GNU GPLv3,Apache
+   - [MIT](https://choosealicense.com/licenses/mit/)
+   - [ISC](https://choosealicense.com/licenses/isc/)
+   - [GNU](https://choosealicense.com/licenses/gpl-3.0/)
+   - [Apache](https://choosealicense.com/licenses/apache/)
 
 ## Contributing:
-    idk
+    a
 
 ## Test:
-    idk
+    
 
 ## Questions: 
   - Please feel free to contact for additional questions by email below: 
-  - [Email] idk.
+  - [Email] a.
   - You may visit my GitHub Page for additional information below: 
-  - [GitHub] idk.
+  - [GitHub] a.
   
