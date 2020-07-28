@@ -83,7 +83,7 @@ function generator(response) {
   }
 
   for (let i = 0; i < response.license.length; i++) {
-    badge[i] = badgeSourse[response.license[i]];
+    badge.push(badgeSourse[response.license[i]]);
     response.license[i] = sourse[response.license[i]];
 }
 
