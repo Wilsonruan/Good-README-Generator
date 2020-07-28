@@ -1,6 +1,6 @@
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)  ![License](https://img.shields.io/badge/License-ISC-blue.svg)  ![License](https://img.shields.io/badge/License-GNU-blue.svg)  ![License](https://img.shields.io/badge/License-Apache-blue.svg)
-## Wilson
+![License](https://img.shields.io/badge/License-MIT-green.svg)  ![License](https://img.shields.io/badge/License-BSD-green.svg)  ![License](https://img.shields.io/badge/License-GNU_3-blue.svg)  
+## a
 
 ## Description:
     a
@@ -25,7 +25,6 @@
    - [MIT](https://choosealicense.com/licenses/mit/)
    - [ISC](https://choosealicense.com/licenses/isc/)
    - [GNU](https://choosealicense.com/licenses/gpl-3.0/)
-   - [Apache](https://choosealicense.com/licenses/apache/)
 
 ## Contributing:
     a

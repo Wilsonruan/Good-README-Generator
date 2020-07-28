@@ -45,7 +45,7 @@ function promptUser() {
           "MIT",
           "ISC",
           "GNU",
-          'Apache'
+          "Apache"
         ],
         name: 'license',
       },
@@ -64,16 +64,34 @@ function promptUser() {
 }
 
 function generator(response) {
-  var badge = ['','','',''];
+  var badge = ['','','','']
+  const badgeSourse = {
+    "MIT" : `![License](https://img.shields.io/badge/License-MIT-green.svg)`,
+    "ISC" : `![License](https://img.shields.io/badge/License-BSD-green.svg)`,
+    "GNU" : `![License](https://img.shields.io/badge/License-GNU_3-blue.svg)`,
+    "Apache" : `![License](https://img.shields.io/badge/License-Apache_2-blue.svg)`
+  }
+  const sourse = {
+    "MIT" : ` - [MIT](https://choosealicense.com/licenses/mit/)`,
+    "ISC" : ` - [ISC](https://choosealicense.com/licenses/isc/)`,
+    "GNU" : ` - [GNU](https://choosealicense.com/licenses/gpl-3.0/)`,
+    "Apache" : ` - [Apache](https://choosealicense.com/licenses/apache-2.0/)`
+  }
 
   for (let i = 0; i < response.license.length; i++) {
-      badge[i] = `![License](https://img.shields.io/badge/License-${response.license[i]}-blue.svg)`
-      if ( response.license[i] === 'GNU') {
-        response.license[i] = ` - [GNU](https://choosealicense.com/licenses/gpl-3.0/)`
-      } else {
-        response.license[i] = ` - [${response.license[i]}](https://choosealicense.com/licenses/${response.license[i].toLowerCase()}/)`
-      }
-  }
+    badge[i] = badgeSourse[response.license[i]];
+    response.license[i] = sourse[response.license[i]];
+}
+
+
+  // for (let i = 0; i < response.license.length; i++) {
+  //     badge[i] = `![License](https://img.shields.io/badge/License-${response.license[i]}-blue.svg)`
+  //     if ( response.license[i] === 'GNU') {
+  //       response.license[i] = ` - [GNU](https://choosealicense.com/licenses/gpl-3.0/)`
+  //     } else {
+  //       response.license[i] = ` - [${response.license[i]}](https://choosealicense.com/licenses/${response.license[i].toLowerCase()}/)`
+  //     }
+  // }
 
   return `
 ${badge.join('  ')}
