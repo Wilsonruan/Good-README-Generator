@@ -22,11 +22,15 @@ function promptUser() {
         message: 'Please provide a description of Installation instructions:',
         name: 'installation',
       },
-
       {
         type: 'input',
         message: 'Please provide a description of Usage for users:',
         name: 'usage',
+      },
+      {
+        type: 'input',
+        message: 'If you would like to provide a screenshot, please include ./ or a web link (Enter to Skip):',
+        name: 'image',
       },
       {
         type: 'input',
@@ -83,16 +87,6 @@ function generator(response) {
     response.license[i] = sourse[response.license[i]];
 }
 
-
-  // for (let i = 0; i < response.license.length; i++) {
-  //     badge[i] = `![License](https://img.shields.io/badge/License-${response.license[i]}-blue.svg)`
-  //     if ( response.license[i] === 'GNU') {
-  //       response.license[i] = ` - [GNU](https://choosealicense.com/licenses/gpl-3.0/)`
-  //     } else {
-  //       response.license[i] = ` - [${response.license[i]}](https://choosealicense.com/licenses/${response.license[i].toLowerCase()}/)`
-  //     }
-  // }
-
   return `
 ${badge.join('  ')}
 # ${response.title}
@@ -115,6 +109,7 @@ ${badge.join('  ')}
 
 ## Usage:
     ${response.usage}
+    ![ScreenShot](${response.image})
 
 ## License:
   ${response.license.join('\n  ')}
