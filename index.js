@@ -28,8 +28,8 @@ function promptUser() {
         name: 'usage',
       },
       {
-        type: 'input',
-        message: 'If you would like to provide a screenshot, please include ./ or a web link (Enter to Skip):',
+        type: 'confirm',
+        message: 'Would you like to provide a screenshot, please locate screenshot in ./Assets/Images/ScreenShot.jpg:',
         name: 'image',
       },
       {
@@ -87,6 +87,12 @@ function generator(response) {
     response.license[i] = sourse[response.license[i]];
 }
 
+if (response.image) {
+  response.image = `![ScreenShot](./Assets/Images/ScreenShot.jpg)`
+} else {
+  response.image = ''
+}
+
   return `
 ${badge.join('  ')}
 # ${response.title}
@@ -109,7 +115,7 @@ ${badge.join('  ')}
 
 ## Usage:
     ${response.usage}
-    ![ScreenShot](${response.image})
+${response.image}
 
 ## License:
   ${response.license.join('\n  ')}
