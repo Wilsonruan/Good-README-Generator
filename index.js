@@ -95,7 +95,7 @@ function generator(response) {
 
   return `
 ${badge.join('  ')}
-## ${response.title}
+# ${response.title}
 
 ## Description:
     ${response.description}
