@@ -1,9 +1,9 @@
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)  ![License](https://img.shields.io/badge/License-BSD-green.svg)  ![License](https://img.shields.io/badge/License-GNU_3-blue.svg)  ![License](https://img.shields.io/badge/License-Apache_2-blue.svg)
-# ok
+# a
 
 ## Description:
-    oko
+    a
 
 ## Table of Contents
 
@@ -16,27 +16,27 @@
 - [Questions](#questions)
 
 ## Installation:
-    ko
+    a
 
 ## Usage:
-    k
-![ScreenShot](./Assets/Images/ScreenShot.jpg)
+    a
+
 
 ## License:
-   - [MIT](https://choosealicense.com/licenses/mit/)
-   - [ISC](https://choosealicense.com/licenses/isc/)
-   - [GNU](https://choosealicense.com/licenses/gpl-3.0/)
-   - [Apache](https://choosealicense.com/licenses/apache-2.0/)
+  MIT
+  ISC
+  GNU
+  Apache
 
 ## Contributing:
-    k
+    a
 
 ## Test:
-    k
+    a
 
 ## Questions: 
   - Please feel free to contact for additional questions by email below: 
-  - [Email] k.
+  - [Email] a.
   - You may visit my GitHub Page for additional information below: 
-  - [GitHub] k.
+  - [GitHub] a.
   

@@ -68,7 +68,7 @@ function promptUser() {
 }
 
 function generator(response) {
-  var badge = ['','','','']
+  var badge = []
   const badgeSourse = {
     "MIT" : `![License](https://img.shields.io/badge/License-MIT-green.svg)`,
     "ISC" : `![License](https://img.shields.io/badge/License-BSD-green.svg)`,
@@ -87,11 +87,7 @@ function generator(response) {
     response.license[i] = sourse[response.license[i]];
 }
 
-if (response.image) {
-  response.image = `![ScreenShot](./Assets/Images/ScreenShot.jpg)`
-} else {
-  response.image = ''
-}
+response.image = response.image ? '![ScreenShot](./Assets/Images/ScreenShot.jpg)' : '';
 
   return `
 ${badge.join('  ')}
