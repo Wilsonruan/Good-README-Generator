@@ -1,9 +1,9 @@
 
-![License](https://img.shields.io/badge/License-MIT-green.svg)  ![License](https://img.shields.io/badge/License-BSD-green.svg)  ![License](https://img.shields.io/badge/License-GNU_3-blue.svg)  ![License](https://img.shields.io/badge/License-Apache_2-blue.svg)
-# z
+![License](https://img.shields.io/badge/License-MIT-green.svg)  ![License](https://img.shields.io/badge/License-BSD-green.svg)
+# Good README Generator
 
 ## Description:
-    z
+    This application will help coders save time by input information to the rather than creating a README.  
 
 ## Table of Contents
 
@@ -16,27 +16,25 @@
 - [Questions](#questions)
 
 ## Installation:
-    z
+    To use this application, first you will need to clone or download the codes from my GitHub and then run your terminal on the app.  Then, type “npm install” and then “node index.js”. 
 
 ## Usage:
-    z
-
+    Step 1: input the following requirements and Step 2: you are done. Please see image below:
+![ScreenShot](./Assets/Images/ScreenShot.jpg)
 
 ## License:
    - [MIT](https://choosealicense.com/licenses/mit/)
    - [ISC](https://choosealicense.com/licenses/isc/)
-   - [GNU](https://choosealicense.com/licenses/gpl-3.0/)
-   - [Apache](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Contributing:
-    z
+    This is my own. 
 
 ## Test:
-    z
+    Run the command : npm run test
 
 ## Questions: 
   - Please feel free to contact for additional questions by email below: 
-  - [Email] a.
+  - [Email] wilsonruan23@gmail.com.
   - You may visit my GitHub Page for additional information below: 
-  - [GitHub] z.
+  - [GitHub] https://github.com/Wilsonruan.
   
