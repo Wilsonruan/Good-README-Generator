@@ -1,9 +1,9 @@
 
 ![License](https://img.shields.io/badge/License-MIT-green.svg)  ![License](https://img.shields.io/badge/License-BSD-green.svg)
-# Good README Generator
+# Note Taker
 
 ## Description:
-    This application will help coders save time by input information to the rather than creating a README.  
+    This application can be used to write, save, and delete notes with Express backend.  All retrieve notes will be saved into a JSON file.
 
 ## Table of Contents
 
@@ -16,10 +16,10 @@
 - [Questions](#questions)
 
 ## Installation:
-    To use this application, first you will need to clone or download the codes from my GitHub and then run your terminal on the app.  Then, type “npm install” and then “node index.js”. 
+    To use this application, first you will need to clone or download the codes from my GitHub. Enter 'npm install' in terminal and then 'node server.js' 
 
 ## Usage:
-    Step 1: input the following requirements and Step 2: you are done. Please see image below:
+    Step 1: Enter Topic and comments on the notes and click save button on top right. Step 2: To view note, click where on the note on the left side. Step 3: To delete note, simply click the on trash can inside the note bar.
 ![ScreenShot](./Assets/Images/ScreenShot.jpg)
 
 ## License:
@@ -27,7 +27,7 @@
    - [ISC](https://choosealicense.com/licenses/isc/)
 
 ## Contributing:
-    This is my own. 
+    This is my own
 
 ## Test:
     Run the command : npm run test
@@ -36,5 +36,5 @@
   - Please feel free to contact for additional questions by email below: 
   - [Email] wilsonruan23@gmail.com.
   - You may visit my GitHub Page for additional information below: 
-  - [GitHub] https://github.com/Wilsonruan.
+  - [GitHub]  https://github.com/Wilsonruan.
   

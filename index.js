@@ -4,6 +4,13 @@ const inquirer = require("inquirer");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+const confirmAnswerValidator = async (input) => {
+  if (input == 'y' || input == 'n') {
+     return true;
+  }
+  return 'Incorrect asnwer';
+};
+
 function promptUser() {
   return inquirer.prompt(
     [
@@ -28,9 +35,10 @@ function promptUser() {
         name: 'usage',
       },
       {
-        type: 'confirm',
+        type: 'input',
         message: 'Would you like to provide a screenshot, please locate screenshot in ./Assets/Images/ScreenShot.jpg:',
         name: 'image',
+        validate: confirmAnswerValidator
       },
       {
         type: 'input',
@@ -94,7 +102,8 @@ ${badge.join('  ')}
 # ${response.title}
 
 ## Description:
-    ${response.description}
+
+${response.description}
 
 ## Table of Contents
 
@@ -107,20 +116,24 @@ ${badge.join('  ')}
 - [Questions](#questions)
 
 ## Installation:
-    ${response.installation}
+
+${response.installation}
 
 ## Usage:
-    ${response.usage}
+
+${response.usage}
 ${response.image}
 
 ## License:
   ${response.license.join('\n  ')}
 
 ## Contributing:
-    ${response.contributing}
+
+${response.contributing}
 
 ## Test:
-    ${response.test}
+
+${response.test}
 
 ## Questions: 
   - Please feel free to contact for additional questions by email below: 
